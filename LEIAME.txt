@@ -1,1 +1,4 @@
-#JUSTAMENTE PARA CONTROLE DE VERSOES
+#Leia-me
+
+Projeto criado para disciplina de programação web, o site esta cru. Não está responsivo, muito menos ta bonito
+
