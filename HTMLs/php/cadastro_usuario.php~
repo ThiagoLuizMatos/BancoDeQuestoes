@@ -1,0 +1,14 @@
+<?php
+include("conexao.php");
+$nome    = $_POST['nomeUsuario'];
+$apelido = $_POST['apelidoUsuario'];
+$email   = $_POST['emailUsuario'];
+$senha   = $_post['senhaUsuario'];
+
+$insertSql = "insert into usuario(nome,apelido,email,senha) values('$nome','$apelido','$email','$senha')";
+
+mysqli_query($conexao,$insertSql);
+mysqli_close($conexao);
+
+
+?>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+Versão 1.1 feita em 02/11/2017, foram alterados css e IDs de css, por Thiago
+Versão 1.2 feita em 02/11/2017, foi criada o arquivo inserirquestao.html, script.js, por Ronisson
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="beleza.css">
+        <title>Banco do Concurseiro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body id='bodytag'>
+        <div id='divQuestao'></div>
+        <div id="divLogin">
+            <span id='span-informa'></span><br>
+            <table id='tbl-login'><tr><td>Usuário</td><td><input type="text" id="input-usuario-login"></td></tr>
+            <tr><td>Senha</td><td><input type="password" id="input-senha-login"></td></tr></table>
+            <label id='label-login'>cadastre-se&nbsp;<span onclick='criarCadastro()'><strong>aqui</strong></span> </label><button id='btn-ok'onclick="logar()" >OK</button>
+        </div>
+        <header>
+            <!--<img src="LogoBizarra.bmp">-->
+            Banco do concurseiro
+        </header>
+        <div id="menu">
+            <label id="a1"><a href="">Página Inicial</a></label>
+            <label id="a2"><a href="Simulado.html" >Simulado</a></label>
+            <label id="a3"><a href="Ranking.html" >Ranking  </a></label>
+        <table id="tablecss">
+            <tr><td>
+                    Nível&nbsp;
+                    <select id='sel-nivel'>
+                        <option value='aleatorio'>
+                          Aleatório
+                        </option>
+                        <option value='fundamental'>
+                            Fundamental
+                        </option>
+                        <option value='medio'>
+                            Médio
+                        </option>
+                        <option value='superior'>
+                            Superior
+                        </option>
+                    </select>
+                </td><td> Disciplina&nbsp;<select id='sel-disciplina'> </select>
+                  <!--  <select>
+
+                        <option>
+                            Português
+                        </option>
+                        <option>
+                            Matemática
+                        </option>
+                        <option>
+                            Física
+                        </option>
+                    </select>-->
+                </td>
+                
+                <td> Ano&nbsp;
+
+                    <select id='sel-ano'>
+                        <option value='aleatorio'>
+                          Aletório
+                        </option>
+                        <option value='2017'>
+                            2017
+                        </option>
+                        <option value='2016'>
+                            2016
+                        </option>
+                        <option value='2015'>
+                            2015
+                        </option >
+                        <option value='2014'>
+                            2014
+                        </option>
+                        <option value='2013'>
+                            2013
+                        </option>
+                        <option value='2012'>
+                            2012
+                        </option>
+                    </select>
+                </td>
+                <td> Banca&nbsp;<select id='sel-banca'>  </select>
+                  <!--  <select>
+
+                        <option>
+                            Cespe
+                        </option>
+                        <option>
+                            Cesgranrio
+                        </option>
+                        <option>
+                            IBFC
+                        </option>
+                        <option>
+                            FGV
+                        </option>
+                        <option>
+                            UNB
+                        </option>
+
+                    </select>-->
+                </td>
+            </tr>
+        </table>
+        <button id='btn-gerar-simulado' onclick='inserirQuestao()'>Gerar Simulado</button>
+        </div>
+        <!--<span id="spanQuestao"></span>-->
+
+        <div id="divEscolhaMateria">
+            <br><b>Seu melhor site para mudar de vida, estude que tudo ficará mais fácil.<br><br>
+                "A VIDA É DURA PRA QUEM É MOLE"<br>
+                <i>Jussilvio Pena</i></b><br><br><br>
+            <img src="imagens/concurso-publico-1.jpg"id='imagemDiv' height=220>
+        </div>
+
+        <div id="divPropaganda">
+            <img src="imagens/concurso.jpg" id='imagemDiv'height=220>
+            <img src="imagens/download.jpg" id='imagemDiv' height=220>
+        </div>
+        <span id='escuro'></span>
+        <span id='cadastro'></span>
+        <script src="js/script.js"></script>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <!--  <link rel="stylesheet" type="text/css" href="beleza.css">-->
+    <title>inserir questão</title>
+    <style>
+        #sair{
+              background-color: red;
+              color:white;
+              border:none;
+              cursor:pointer;
+        }
+
+    </style>
+    <meta charset='utf-8'>
+  </head>
+  <body>
+    <!--
+      <div id="menu">
+            <label id="labelMenu">
+                <a href="index.html">Página Inicial</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">Simulado</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Ranking.html">Ranking  </a>
+            </label>
+        </div>
+
+      <div id="divEscolhaMateria">
+
+            <img src="imagens/concurso-publico-1.jpg" width=205 height=220>
+        </div>
+
+        <div id="divPropaganda">
+            <img src="imagens/concurso.jpg" width=205 height=220>
+            <img src="imagens/download.jpg" width=205 height=220>
+        </div>-->
+    <table id="tablecss">
+        <tr><td>
+                Nível&nbsp;
+                <select>
+
+                    <option>
+                        Fundamental
+                    </option>
+                    <option>
+                        Médio
+                    </option>
+                    <option>
+                        Superior
+                    </option>
+                </select>
+            </td><td> Disciplina&nbsp;<span id='select-disciplina'></span>
+          <!--      <select>
+
+                    <option>
+                        Português
+                    </option>
+                    <option>
+                        Matemática
+                    </option>
+                    <option>
+                        Física
+                    </option>
+                </select>-->
+            </td>
+            <td> Ano&nbsp;
+                <select>
+
+                    <option>
+                        2017
+                    </option>
+                    <option>
+                        2016
+                    </option>
+                    <option>
+                        2015
+                    </option>
+                    <option>
+                        2014
+                    </option>
+                    <option>
+                        2013
+                    </option>
+                    <option>
+                        2012
+                    </option>
+                </select>
+            </td>
+            <td> Banca&nbsp;<span id='select-banca'></span>
+              <!--  <select>
+
+                    <option>
+                        Cespe
+                    </option>
+                    <option>
+                        Cesgranrio
+                    </option>
+                    <option>
+                        IBFC
+                    </option>
+                    <option>
+                        FGV
+                    </option>
+                    <option>
+                        UNB
+                    </option>
+
+                </select>-->
+            </td>
+            <td>
+              Tipo: <input type="radio" name="escolha" id="multiplaEscolha"> Multipla Escolha&nbsp;&nbsp;<input type="radio" name="escolha" id="certoErrado">Certo ou Errado
+            </td>
+        </tr>
+    </table></br></br>
+    <span id="inserir-dados"></span>
+    <span id="inserir-texto"></span>
+    <span id="inserir-questao"></span>
+
+  <script src="js/script.js"></script>
+  </body>
+</html>
